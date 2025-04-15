@@ -1,0 +1,22 @@
+.clock-skibidi-toilet {
+  font-family: Montserrat;
+  font-weight: light;
+  display: flex;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  margin: none;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  position: absolute;
+  top: 15%; /* Move to the vertical center */
+  left: 50%; /* Move to the horizontal center */
+  transform: translate(-50%, -50%); /* Adjust for the element's size */
+}
+
+.clock-skibidi-toilet h1 {
+  background: -webkit-linear-gradient(#f3f3f3, #333); /* Apply gradient to the text */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Make the text transparent to show the gradient */
+}
