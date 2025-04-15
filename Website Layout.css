@@ -128,6 +128,20 @@ body:hover .intro-container {
   font-weight: bold; /* Make the name bold */
   color: white; /* Set the text color */
   font-family: 'Montserrat', sans-serif; /* Use the same font as the rest of the page */
+  animation: text-glow 2s infinite alternate; /* Add the glowing animation */
+}
+
+@keyframes text-glow {
+  0% {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3), 
+                 0 0 10px rgba(255, 255, 255, 0.3), 
+                 0 0 20px rgba(255, 255, 255, 0.3);
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 
+                 0 0 20px rgba(255, 255, 255, 0.8), 
+                 0 0 30px rgba(255, 255, 255, 1);
+  }
 }
 
 .social-media-links {
@@ -155,16 +169,27 @@ body:hover .intro-container {
   padding-top: 12px;
   padding-left: none; /* Remove any extra padding */
   margin: 0; /* Remove any extra margin */
+  animation: inner-glow 2s infinite alternate; /* Add the inner glow animation */
 }
 
 .twitter-logo,
 .roblox-logo,
 .discord-logo,
-.youtube-logo{
+.youtube-logo {
   width: 50px; /* Set a consistent width for all logos */
   height: 50px; /* Set a consistent height for all logos */
   object-fit: contain; /* Ensure the logos scale proportionally */
   display: block; /* Ensure the logos do not have inline spacing */
+  animation: inner-glow 2s infinite alternate; /* Add the inner glow animation */
+}
+
+@keyframes inner-glow {
+  0% {
+    filter: brightness(1); /* Normal brightness */
+  }
+  100% {
+    filter: brightness(2); /* Increased brightness for inner glow */
+  }
 }
 
 .roblox-logo:hover,
